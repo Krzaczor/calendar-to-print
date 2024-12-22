@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/calendar.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaledario</title>
+  </head>
+  <body>
+    <form id="form-calendar" class="form print-hidden">
+      <input id="year-input" name="year" class="input" />
+      <button type="submit" id="year-show" class="btn">Pokaż</button>
+    </form>
+    <h1 class="title" id="year">Kalendarz</h1>
+    <div class="button-group actions">
+      <button class="btn" id="download-pdf" disabled>Pobierz PDF</button>
+      <button class="btn" id="print">Drukuj</button>
+    </div>
+    <div id="calendar"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
